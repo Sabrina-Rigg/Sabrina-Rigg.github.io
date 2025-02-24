@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My CV</title>
-    <link rel="stylesheet" href="main.css" />
+    <link href="./styles/main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div class="container">
       <header>
-        <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
         <h1>Sabrina Karin Rigg</h1>
         <p>Jnr Web Developer | Photographer</p>
       </header>
 
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <nav class="navbar">
+        <a href="./index.html">
+          <button>Home</button>
+        </a>
+        <a href="./about.html"> <button>About</button></a>
+        <button>Blog</button>
+        <a href="#contact">
+          <button>Contact</button>
+        </a>
       </nav>
 
       <section id="about">
@@ -37,19 +37,19 @@
         <h2>Work Experience</h2>
         <table>
           <tr>
-            <th>Dev Academy</th>
-            <th>Student</th>
-            <th>2025/th></th>
+            <th>Workplace</th>
+            <th>Title</th>
+            <th>Time</th>
           </tr>
 
           <tr>
-            <td>Owner</td>
             <td>The Common Room Cafe</td>
+            <td>Owner</td>
             <td>2020 - 2024</td>
           </tr>
           <tr>
             <td>Sabrina Karin Photography</td>
-            <td>Photographer</td>
+            <td>Photographer/Owner</td>
             <td>2012 - 2020</td>
           </tr>
         </table>
@@ -57,11 +57,10 @@
 
       <section id="skills">
         <h2>Skills</h2>
-        <ul>
-          <li>HTML, CSS, JavaScript</li>
-          <li>Baking, Hospitality Management, FOH</li>
-          <li>Lightroom, Photoshop, Digital and Film Photography</li>
-        </ul>
+        <p>
+          HTML, CSS, JavaScript Baking, Hospitality Management, FOH, Lightroom,
+          Photoshop, Digital and Film Photography
+        </p>
       </section>
 
       <section id="contact">
