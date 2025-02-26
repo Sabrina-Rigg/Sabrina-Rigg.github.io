@@ -2,7 +2,7 @@
 body {
   font-family: 'Playfair Display', serif;
   background-color: #faf3e0;
-  color: #5c3d2e;
+  color: #605f4b;
   margin: 0;
   padding: 0;
   display: flex;
@@ -18,25 +18,29 @@ h1,
 h2,
 h3 {
   font-family: 'Merriweather', serif;
-  color: #8c3f2d;
+  color: #9c9e80;
   margin-bottom: 0.5em;
+}
+
+.main-heading {
+  text-align: center;
 }
 
 /* Links */
 a {
-  color: #d97941;
+  color: #9c9e80;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-  color: #a23e2d;
+  color: #9c9e80;
 }
 
 /* Buttons */
 button {
-  background-color: #d97941;
-  color: white;
+  background-color: #cdad85;
+  color: #f9f4ea;
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
@@ -46,12 +50,12 @@ button {
 }
 
 button:hover {
-  background-color: #a23e2d;
+  background-color: #9c9e80;
 }
 
 .navbar {
-  background-color: #d97941;
-  color: white;
+  background-color: #cdad85;
+  color: #f9f4ea;
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
@@ -59,33 +63,6 @@ button:hover {
   border-radius: 5px;
   margin: 0 10px;
   transition: background-color 0.3s ease-in-out;
-}
-
-/* Skills */
-
-.skills {
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
-  font-size: 16px;
-  text-align: left;
-}
-
-/* Two Lists Side by Side */
-.list-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin: 20px 0;
-}
-
-.list-container ul {
-  list-style-type: none;
-  padding: 0;
-  background: rgba(255, 235, 205, 0.5);
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Images */
@@ -97,32 +74,38 @@ img {
   border-radius: 10px;
 }
 
+.content-images {
+  max-width: 80%;
+}
+
 table {
   width: 80%;
   margin: 20px auto;
   border-collapse: collapse;
   text-align: center;
-  border: 2px solid #8c3f2d;
+  border: 2px solid #cdad85;
 }
 
 td,
 th {
-  border: 2px solid #8c3f2d;
+  border: 2px solid #cdad85;
   padding: 10px;
 }
 
 th {
-  background-color: #d97941;
-  color: white;
+  background-color: #cdad85;
+  color: #f9f4ea;
+}
+
+.blog-post {
+  text-align: left;
 }
 
 /* Container */
 .container {
   max-width: 800px;
   padding: 20px;
-  background: rgba(255, 235, 205, 0.5);
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #faf3e0;
 }
 
 /* widescreen displays */
