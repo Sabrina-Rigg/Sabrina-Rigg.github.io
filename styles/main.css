@@ -13,12 +13,11 @@ body {
   text-align: center;
 }
 
-/* Headings */
 h1,
 h2,
 h3 {
   font-family: 'Merriweather', serif;
-  color: #9c9e80;
+  color: #68756d;
   margin-bottom: 0.5em;
 }
 
@@ -26,46 +25,37 @@ h3 {
   text-align: center;
 }
 
-/* Links */
 a {
   color: #9c9e80;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
-
-a:hover {
-  color: #9c9e80;
-}
-
-/* Buttons */
-button {
-  background-color: #cdad85;
-  color: #f9f4ea;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease-in-out;
-}
-
-button:hover {
-  background-color: #9c9e80;
-}
-
 .navbar {
-  background-color: #cdad85;
+  background-color: none;
   color: #f9f4ea;
   border: none;
-  padding: 10px 20px;
+  padding: 20px 0px;
   font-size: 1rem;
   cursor: pointer;
   border-radius: 5px;
   margin: 0 10px;
-  transition: background-color 0.3s ease-in-out;
+}
+button {
+  background: transparent;
+  color: #060707;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
 }
 
-/* Images */
+button:hover {
+  background: transparent;
+  color: #a1a79e;
+}
+.blog-button {
+  background-color: #d2a96a;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -78,34 +68,62 @@ img {
   max-width: 80%;
 }
 
-table {
-  width: 80%;
-  margin: 20px auto;
-  border-collapse: collapse;
-  text-align: center;
-  border: 2px solid #cdad85;
-}
-
-td,
-th {
-  border: 2px solid #cdad85;
-  padding: 10px;
-}
-
-th {
-  background-color: #cdad85;
-  color: #f9f4ea;
-}
-
-.blog-post {
-  text-align: left;
-}
-
-/* Container */
 .container {
   max-width: 800px;
   padding: 20px;
   background-color: #faf3e0;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.blog-post {
+  background: #a1a79e;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.blog-post img {
+  max-width: 60%;
+  height: 100 px;
+  object-fit: cover;
+}
+
+.blog-post h2 {
+  color: white;
+  font-size: 1.2em;
+}
+
+.blog-post p {
+  font-size: 0.9em;
+  color: white;
+}
+
+.blog-post a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.blog-post a:hover {
+  background-color: #d2a96a;
+}
+
+@media (max-width: 600px) {
+  .blog-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* widescreen displays */
