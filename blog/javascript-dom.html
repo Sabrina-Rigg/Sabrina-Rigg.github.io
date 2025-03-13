@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog post</title>
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Sabrina Karin Rigg</h1>
+        <p>Jnr Web Developer | Photographer</p>
+      </header>
+
+      <nav class="navbar">
+        <a href="../index.html"><button>Home</button></a>
+        <a href="about.html"><button>About</button></a>
+      </nav>
+      <section class="blog-post">
+        <h1 class="main-heading">Technical Blog - Javascript Fundamentals</h1>
+        <hr width="80%" size="2" color="black" />
+
+        <p>
+          When you visit a website or use a web application, three key
+          technologies are working behind the scenes: HTML, CSS, and JavaScript.
+          Each one plays a different role, but they work together to create the
+          websites and apps we use.
+        </p>
+        <h3>HTML – The Structure</h3>
+        <p>
+          HTML (HyperText Markup Language) is the foundation of any web page.
+          Think of it like the frame of a house — it provides the structure.
+          HTML is used to create elements like headings, paragraphs, buttons,
+          links, and images. For example, when you see a title or a button on a
+          website, that’s HTML in action.<br />
+          <br />
+          Here’s a simple example of HTML code:<br />
+          &lt;p&gt;Welcome to My Website&lt;/h1&gt;<br />
+          &lt;p&gt;This is an example of a paragraph.&lt;/p&gt;
+          <br />
+        </p>
+        <h3>CSS – The Style</h3>
+        <p>
+          CSS (Cascading Style Sheets) is what makes a website look good. It
+          controls the design — things like colors, fonts, layouts, and spacing.
+          If HTML is the frame of the house, CSS is the paint, furniture, and
+          decorations. With CSS, you can make a website look modern, colorful,
+          and easy to navigate.<br />
+          <br />
+          Example of CSS:<br />
+          h1 {<br />
+          color: blue;<br />
+          font-size: 24px;<br />
+          }
+        </p>
+        <h3>JavaScript – The Behavior</h3>
+        <p>
+          JavaScript adds interactivity and functionality to a website. It makes
+          things happen — like when you click a button and a pop-up appears, or
+          when content changes without needing to reload the page. If HTML is
+          the frame and CSS is the paint, JavaScript is the electricity that
+          makes everything work.<br />
+          <br />
+          Example of JavaScript:<br />
+          document.querySelector('button').onclick = function() {<br />
+          alert('Button clicked!');<br />
+          };
+          <br />
+        </p>
+
+        <h3>How They Work Together</h3>
+        <p>
+          HTML creates the structure, CSS makes it look good, and JavaScript
+          makes it interactive. For example, a "Buy Now" button is created with
+          HTML, styled with CSS to make it look appealing, and JavaScript makes
+          it work when you click it. Together, HTML, CSS, and JavaScript create
+          the seamless web experiences we use every day!
+          <br />
+          An analogy I would use would be similar to the one used above: the
+          house.<br />
+          <br />
+          HTML = the structure of the house e.g. the frame <br />
+          <br />
+          CSS = the style, colour and decorative features of the house <br />
+          <br />
+          Javascript = the function the utilities of the house e.g. tap turns
+          the water on and off, light switches turn light on and off.
+        </p>
+        <h3>
+          Explain control flow and loops using an example process from everyday
+        </h3>
+        <p>
+          Control flow is the order in which you program an object. For an
+          everyday example, we could say it is like following a method for
+          making a cup of tea:<br />
+          <br />
+          1 = boil water<br />
+          2 = if you have tea bags<br />
+          - Place tea bag in a mug<br />
+          3 = if you do not have tea bags<br />
+          - Buy tea bags<br />
+          - Place tea bag in a mug<br />
+          3 = pour boiling water in the mug, leaving space for milk<br />
+          4 = add a splash of milk<br />
+          5 = drink tea<br />
+          <br />
+          A loop is when we repeat a task until certain conditions are met.<br />
+          <br />
+          For example:<br />
+          Tea is too hot:<br />
+          - Blow on tea<br />
+          - Check temperature<br />
+          - Stop loop until tea is at 60 degrees celsius<br />
+        </p>
+        <h3>
+          Describe what the DOM is and an example of how you might interact with
+          it.
+        </h3>
+        <p>
+          Imagine that the computer screen is a lego house. The DOM (Document
+          Object Model) is like the lego instructions that tell you about the
+          lego bricks in the house. The HTML is the frame of the house, the
+          foundations, door frames etc The CSS is the colour, layout and design.
+          The DOM is what the computer uses when it looks at the instructions of
+          a web page and understands how it is built. We can manipulate the DOM
+          by using javascript which dives into the instructions and pinpoints
+          the exact locations of the ‘bricks’ we want to change in the house.<br />
+          <br />
+          An example of javascript changing a button on a website would be:<br />
+          document.getElementById(‘myButton’).innerText = “Hello”<br />
+          <br />
+          The above syntax finds the button called ‘myButton’ and changes the
+          text within it to say “Hello”
+        </p>
+        <h3>
+          Explain the difference between accessing data from arrays and objects.
+        </h3>
+        <p>
+          ITo put it plainly, an array is like a list of something and an object
+          is like a dictionary for something. An array declares a variable with
+          a list of a certain property. The list always starts an index number
+          starting with 0 as the first item in the list.<br />
+          <br />
+          An array example:<br />
+          Fruit:<br />
+          [0] apple<br />
+          [1] banana<br />
+          [2] pear<br />
+          <br />
+          Or in Javascript:<br />
+          let fruit = [‘apple’, ‘banana’, ‘pear’]<br />
+          console.log(fruit[1]) // output is banana<br />
+          <br />
+          An object declares a variable that has different properties that you
+          access as keys. It acts as a dictionary for the variable that you are
+          declaring.<br />
+          <br />
+          An object example:<br />
+
+          let person = {<br />
+          name: “Sabrina”,<br />
+          age: 36,<br />
+          job: “mum”<br />
+          }<br />
+          console.log(person.name) // output is Sabrina
+        </p>
+        <h3>Explain what functions are and why they are helpful.</h3>
+        <p>
+          To put it simply, a function is like a recipe card, it has a set of
+          instructions that make a certain objective happen and you can ‘call’
+          the function time and time again to see the objective.<br />
+          <br />
+          A simple example of a function is:<br />
+          Function sum() {<br />
+          return a + b;<br />
+          }<br />
+          <br />
+          The function is called sum, the inputs (ingredients) are called a and
+          b, the the instructions are to add a and b together.<br />
+          <br />
+          To use the function it looks like this:<br />
+          let result = sum(5, 3);<br />
+          console.log(result) // output is 8<br />
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
