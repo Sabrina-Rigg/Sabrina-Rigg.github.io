@@ -54,6 +54,7 @@ button:hover {
 }
 .blog-button {
   background-color: #d2a96a;
+  align: center;
 }
 img {
   max-width: 100%;
@@ -67,18 +68,16 @@ img {
   max-width: 80%;
 }
 
-/* Blog container: even grid */
 .blog-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   max-width: 1200px;
-  margin: 0 auto; /* Center the grid */
+  margin: 0 auto;
   padding: 20px;
-  box-sizing: border-box; /* Ensure consistent sizing */
+  box-sizing: border-box;
 }
 
-/* Blog post styling */
 .blog-post {
   background: #a1a79e;
   border: 1px solid #ddd;
@@ -90,24 +89,29 @@ img {
 .blog-post h2 {
   color: white;
   font-size: 1.2em;
-  text-align: center; /* Center title */
+  text-align: center;
 }
 
 .blog-post p {
   font-size: 0.9em;
   color: white;
-  text-align: left; /* Left align text */
+  text-align: center;
 }
 
-/* Fix width changes on screen resize */
+.blog-post-inner {
+  text-align: left;
+}
+
+.blog-post-inner h1 {
+  text-align: center;
+}
 .container {
-  width: 100%; /* Allow full width */
-  max-width: 1200px; /* Prevent over-expansion */
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Responsive design */
 @media (max-width: 600px) {
   .blog-container {
     grid-template-columns: 1fr;
