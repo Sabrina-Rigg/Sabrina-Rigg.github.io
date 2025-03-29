@@ -67,83 +67,61 @@ img {
   max-width: 80%;
 }
 
-.container {
-  max-width: 800px;
-  padding: 20px;
-  background-color: #faf3e0;
-}
-
+/* Blog container: even grid */
 .blog-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  max-width: 900px;
-  margin: auto;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the grid */
   padding: 20px;
+  box-sizing: border-box; /* Ensure consistent sizing */
 }
 
+/* Blog post styling */
 .blog-post {
   background: #a1a79e;
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 8px;
-}
-
-.blog-post img {
-  max-width: 60%;
-  height: 100 px;
-  object-fit: cover;
+  box-sizing: border-box;
 }
 
 .blog-post h2 {
   color: white;
   font-size: 1.2em;
+  text-align: center; /* Center title */
 }
 
 .blog-post p {
   font-size: 0.9em;
   color: white;
+  text-align: left; /* Left align text */
 }
 
-.blog-post a {
-  display: inline-block;
-  /* margin-top: 10px; */
-  padding: 10px 15px;
-  color: white;
-  text-decoration: none;
-  font-size: 0.9em;
+/* Fix width changes on screen resize */
+.container {
+  width: 100%; /* Allow full width */
+  max-width: 1200px; /* Prevent over-expansion */
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.blog-post a:hover {
-  background-color: #d2a96a;
-}
-
+/* Responsive design */
 @media (max-width: 600px) {
   .blog-container {
     grid-template-columns: 1fr;
   }
 }
 
-/* widescreen displays */
-@media only screen and (min-width: 920px) {
-  .container {
-    font-size: 16px;
-    /* some layout rules */
+@media (min-width: 601px) and (max-width: 920px) {
+  .blog-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* tablets */
-@media only screen and (max-width: 919px) {
-  .container {
-    font-size: 16px;
-    /* some layout rules */
-  }
-}
-
-/* phones */
-@media only screen and (max-width: 400px) {
-  .container {
-    font-size: 16px;
-    /* some layout rules */
+@media (min-width: 921px) {
+  .blog-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
